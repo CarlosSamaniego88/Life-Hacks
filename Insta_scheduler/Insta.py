@@ -9,7 +9,7 @@ def main():
 def post():
     username = "USERNAME"           #insert your username  
     password = "PASSWORD"           #insert your password
-    mypath = "/Users/Carlos/Projects/Life-Hacks/Insta_scheduler/future_posts/*.JPG"     #insert path to folder with photos you want to post
+    mypath = "/path/directory/imagefolder"     #insert path to folder with photos you want to post
 
     image_paths = glob.glob(mypath)     #will iterate and store all image paths in folder
     # print(image_paths)
