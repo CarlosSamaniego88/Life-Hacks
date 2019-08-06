@@ -3,6 +3,9 @@ import glob
 import schedule
 import time
 
+#Remember to have a folder of images that all have endings of either JPG, jpeg, or png
+#When running this script, run, "nohup python insta.py &", this will allows the script to run in the background
+
 def main():
     post()
 
