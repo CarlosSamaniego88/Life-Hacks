@@ -11,7 +11,7 @@ def post():
     password = "pass"
     mypath = "/Users/Carlos/Projects/Life-Hacks/Insta_scheduler/future_posts/*.JPG"
 
-    image_paths = glob.glob("/Users/Carlos/Projects/Life-Hacks/Insta_scheduler/future_posts/*.JPG")
+    image_paths = glob.glob(mypath)
     insta_post_descriptions = ["TBT to Chihuahua when all I just worried about was tortas piolines #TortasPiolines #python",
                                 "TBT to spring break with the day one fam #wynwood #python"
                             ]
@@ -19,10 +19,11 @@ def post():
     print(future_posts)
    
     with client(username, password) as cli:
-        cli.upload(future_posts)
+        for photo, description in future_posts: 
+            cli.upload(photo, description)
         print("success")
 
-    # schedule.every().thursday.at("15:00").do(post)
+schedule.every().tuesday.at("16:23").do(post)
 
 while True:
     schedule.run_pending()
