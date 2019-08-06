@@ -1,17 +1,32 @@
 from instapy_cli import client
-from os import listdir
-from os.path import isfile, join
+import glob
+import schedule
+import time
 
-username = "USERNAME"
-password = "PASSWORD"
-image = "FILE PATH"
-text = "Uploaded via python"
-mypath = "/Users/Carlos/Projects/Life-Hacks/Insta_scheduler/future_posts"
+def main():
+    post()
 
-future_posts = [photo for photo in listdir(mypath) if isfile(join(mypath, photo))]
-print(future_posts)
+def post():
+    username = "user"
+    password = "pass"
+    mypath = "/Users/Carlos/Projects/Life-Hacks/Insta_scheduler/future_posts/*.JPG"
 
-for post in range(len(future_posts)):
+    image_paths = glob.glob("/Users/Carlos/Projects/Life-Hacks/Insta_scheduler/future_posts/*.JPG")
+    insta_post_descriptions = ["TBT to Chihuahua when all I just worried about was tortas piolines #TortasPiolines #python",
+                                "TBT to spring break with the day one fam #wynwood #python"
+                            ]
+    future_posts = zip(image_paths, insta_post_descriptions)
+    print(future_posts)
+   
     with client(username, password) as cli:
-        cli.upload(post, text)
+        cli.upload(future_posts)
         print("success")
+
+    # schedule.every().thursday.at("15:00").do(post)
+
+while True:
+    schedule.run_pending()
+    time.sleep(1)
+
+if __name__ == '__main__':
+    main() 
