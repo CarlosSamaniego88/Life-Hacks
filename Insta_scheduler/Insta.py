@@ -9,12 +9,13 @@ def main():
 def post():
     username = "USERNAME"           #insert your username  
     password = "PASSWORD"           #insert your password
-    mypath = "/path/directory/imagefolder"     #insert path to folder with photos you want to post
+    mypath = "directory/*.JPG"     #insert path to folder with photos you want to post
+                         #make sure all images in fill have same ending like JPG, jpeg, png, etc
 
     image_paths = glob.glob(mypath)     #will iterate and store all image paths in folder
     # print(image_paths)
-    insta_post_descriptions = ["TBT to Chihuahua when all I just worried about was tortas piolines #TortasPiolines #python",
-                                "TBT to spring break with the day one fam #wynwood #python"
+    insta_post_descriptions = ["TBT to",
+                                "TBT to "
                             ]       #associate a description with your photo, check order with print statement in 15 
     
     future_posts = zip(image_paths, insta_post_descriptions)    #creates a dictionary with photo and description
@@ -26,7 +27,7 @@ def post():
             break                               #break allows the posting of one photo at a time instea of all in folder
         print("success")
 
-schedule.every().thursday.at("15:00").do(post)  #insert when you want to schedule posts
+schedule.every().thursday.at("15:00").do(post)  #insert when you want to schedule in military time
 
 while True:
     schedule.run_pending()
