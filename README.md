@@ -5,6 +5,7 @@ Instagram post scheduler:
 ``
 pip install instapy-cli
 ``
+
 ``
 pip install schedule
 ``
