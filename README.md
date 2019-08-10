@@ -17,6 +17,13 @@ and to activate
 source env/bin/activate
 ``
 
+To install all necessary packages, can also do:
+
+``
+pip install -r requirements.txt
+``
+
+
 -----------------------------------------------------
 
 Instagram post scheduler:
