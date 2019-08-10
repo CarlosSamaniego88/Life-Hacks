@@ -1,6 +1,10 @@
 # Life-Hacks
 Cool python scripts for casual/everyday use
 
+``
+pip install virtualenv
+``
+
 Create an Environment with the following commands:
 
 ``
