@@ -1,10 +1,14 @@
 # Life-Hacks
 Cool python scripts for casual/everyday use
 
+``
+pip install virtualenv
+``
+
 Create an Environment with the following commands:
 
 ``
-python3 -m name_of_env env
+python3 -m venv name_of_env
 ``
 
 and to activate
