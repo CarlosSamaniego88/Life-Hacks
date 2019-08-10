@@ -2,6 +2,7 @@ from instapy_cli import client
 import glob
 import schedule
 import time
+import os
 
 #Remember to have a folder of images that all have endings of either JPG, jpeg, or png
 #When running this script, run, "nohup python insta.py &", this will allows the script to run in the background
@@ -10,8 +11,9 @@ def main():
     post()
 
 def post():
-    username = "USERNAME"           #insert your username  
-    password = "PASSWORD"           #insert your password
+    #in .bash_profile, write, "export username="yourusername", and, "export password="yourpassword""
+    username = os.environ.get('username')           
+    password = os.environ.get('password')           
     mypath = "directory/*.JPG"     #insert path to folder with photos you want to post
                          #make sure all images in fill have same ending like JPG, jpeg, png, etc
 
