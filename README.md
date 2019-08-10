@@ -1,6 +1,18 @@
 # Life-Hacks
 Cool python scripts for casual/everyday use
 
+Create an Environment with the following commands:
+
+``
+python3 -m venv env
+``
+
+and to activate
+
+``
+source env/bin/activate
+``
+
 Instagram post scheduler:
 
 ``
