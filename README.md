@@ -11,7 +11,7 @@ Create an Environment with the following commands:
 python3 -m venv name_of_env
 ``
 
-and to activate
+and to activate (in each respective folder, Insta_scheduler, myDominosOrder, etc.)
 
 ``
 source env/bin/activate
