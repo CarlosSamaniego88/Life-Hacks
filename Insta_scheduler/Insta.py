@@ -15,7 +15,7 @@ def post():
     username = os.environ.get('username')           
     password = os.environ.get('password')           
     mypath = "directory/*.JPG"     #insert path to folder with photos you want to post
-                         #make sure all images in fill have same ending like JPG, jpeg, png, etc
+                                   #make sure all images in fill have same ending like JPG, jpeg, png, etc
 
     image_paths = glob.glob(mypath)     #will iterate and store all image paths in folder
     # print(image_paths)
@@ -29,7 +29,7 @@ def post():
     with client(username, password) as cli:
         for photo, description in future_posts: 
             cli.upload(photo, description)
-            break                               #break allows the posting of one photo at a time instea of all in folder
+            break                               #break allows the posting of one photo at a time instead of all in folder
         print("success")
 
 schedule.every().thursday.at("15:00").do(post)  #insert when you want to schedule in military time
