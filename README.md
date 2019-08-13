@@ -53,28 +53,7 @@ Before using:
 pip install pizzapi
 ``
 
-``
-pip install requests
-``
+The pizzapi library from https://github.com/gamagori/pizzapi is not working with a little research from my friend (@Alina569). This is due a indentation error in the order.py.
+When you have pip installed pizzapi, go to env/lib/python3.7/site-packages/pizzapi/order.py.
 
-``
-pip install pyhamcrest
-``
-
-``
-pip install xmltodict
-``
-
-``
-pip install pytest
-``
-
-``
-pip install schedule
-``
-
-``
-pip install mock
-``
-
-
+In line 130, add an extra indent to the "return response". There should be two indents on that line.
