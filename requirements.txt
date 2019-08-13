@@ -10,7 +10,11 @@ instapy-cli==0.0.12
 moviepy==0.2.3.2
 numpy==1.17.0
 Pillow==6.1.0
+pizzapi==0.0.4
+PyHamcrest==1.9.0
 requests==2.22.0
 schedule==0.6.0
+six==1.12.0
 tqdm==4.11.2
 urllib3==1.25.3
+xmltodict==0.12.0
