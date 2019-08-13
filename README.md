@@ -53,28 +53,6 @@ Before using:
 pip install pizzapi
 ``
 
-``
-pip install requests
-``
 
-``
-pip install pyhamcrest
-``
-
-``
-pip install xmltodict
-``
-
-``
-pip install pytest
-``
-
-``
-pip install schedule
-``
-
-``
-pip install mock
-``
 
 
