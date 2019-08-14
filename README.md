@@ -57,3 +57,21 @@ The pizzapi library from https://github.com/gamagori/pizzapi is not working with
 When you have pip installed pizzapi, go to env/lib/python3.7/site-packages/pizzapi/order.py.
 
 In line 130, add an extra indent to the "return response". There should be two indents on that line.
+
+-----------------------------------------------------
+Email Text Alerts:
+
+Before using:
+
+``
+pip install twilio
+``
+
+Sign up for a twilio account @ http://twilio.com/ 
+Use the free version
+Confirm your email, and cell phone number (if that is the number you want to send texts to)
+Make sure you get an accountSID, authToken and confirm your Twilio Number (the sender number to your cell phone number)
+Go to https://www.twilio.com/docs/sms/quickstart/python and follow the basic code to send your first text to yourself
+
+For security purposes go to https://www.twilio.com/docs/usage/secure-credentials
+This page will guide to make environment variables so that you don't need to hard code confidential information in your scripts. It will guide to make updates on your .gitignore so that when you upload your repo, the file with your confidential info does not show up.
