@@ -75,3 +75,13 @@ Go to https://www.twilio.com/docs/sms/quickstart/python and follow the basic cod
 
 For security purposes go to https://www.twilio.com/docs/usage/secure-credentials
 This page will guide to make environment variables so that you don't need to hard code confidential information in your scripts. It will guide to make updates on your .gitignore so that when you upload your repo, the file with your confidential info does not show up.
+
+
+-----------------------------------------------------
+## Restaurant Picker:
+
+No need to argue with friends and loved ones about where you're going to eat! Let Python Decide! 
+Here is a script that will randomly pick a restaurant of your choosing in a location of your choosing!
+If you live in South Florida or Winston-Salem, there is a random picker of restaurants in those areas.
+
+
