@@ -12,8 +12,8 @@ def main():
 
 def post():
     #in .bash_profile, write, "export username="yourusername", and, "export password="yourpassword""
-    username = os.environ.get('username')           
-    password = os.environ.get('password')           
+    username = os.environ['INSTA_USERNAME']          
+    password = os.environ['INSTA_PASSWORD']           
     mypath = "directory/*.JPG"     #insert path to folder with photos you want to post
                                    #make sure all images in fill have same ending like JPG, jpeg, png, etc
 
@@ -40,3 +40,6 @@ while True:
 
 if __name__ == '__main__':
     main() 
+
+echo "export INSTA_USERNAME='carlossamaniego14'" > instagram.env
+echo "export INSTA_PASSWORD='Omoplata#88'" >> instagram.env

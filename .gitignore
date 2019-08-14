@@ -125,3 +125,7 @@ dmypy.json
 
 *.out
 .vscode/
+
+twilio.env
+dominos.env
+instagram.env
