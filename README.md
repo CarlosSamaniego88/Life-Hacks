@@ -45,7 +45,7 @@ When running this script, run, "nohup python insta.py &", this allows the script
 
 -----------------------------------------------------
 
-## My Dominos Order: 
+## My Dominos Order (In Development): 
 
 Before using:
 
@@ -59,7 +59,7 @@ When you have pip installed pizzapi, go to env/lib/python3.7/site-packages/pizza
 In line 130, add an extra indent to the "return response". There should be two indents on that line.
 
 -----------------------------------------------------
-## Email Text Alerts:
+## Email Text Alerts (In Development):
 
 Before using:
 
