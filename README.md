@@ -28,7 +28,7 @@ pip install -r requirements.txt
 
 -----------------------------------------------------
 
-## Instagram post scheduler:
+## Instagram Post Scheduler:
 
 ``
 pip install instapy-cli
