@@ -125,6 +125,7 @@ dmypy.json
 
 *.out
 .vscode/
+.vscode
 
 twilio.env
 dominos.env
