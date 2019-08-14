@@ -13,7 +13,7 @@ def rest_picker():
                             'Penny Path Cafe', 'Hakka Chow', 'Thai Harmony', 'Hickory Tavern', 'Village Tavern',
                             'Fratellis', 'Ryans', 'Publix','Midtown Cafe', 'Golden India', 'Quanto Basto',
                             'Cowboys Brazilian Buffet', 'Waffle House', 'Basil Leaf', 'Tacoriendo III', 'Mellow Mushroom',
-                            'El Rancho Tacqueria']
+                            'El Rancho Tacqueria', 'Dominos']
 
     #print('Which city are you in? {0} or {1}?'.format('Boca', 'Winston')) 
     print("Boca or Winston Restaurants?", end ="\n")
