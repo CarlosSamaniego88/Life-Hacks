@@ -40,6 +40,3 @@ while True:
 
 if __name__ == '__main__':
     main() 
-
-echo "export INSTA_USERNAME='carlossamaniego14'" > instagram.env
-echo "export INSTA_PASSWORD='Omoplata#88'" >> instagram.env
