@@ -22,25 +22,25 @@ def rest_picker():
     
     if (City_in == 'Boca' or City_in == 'boca'):
         python_choice = random.choice(Boca_restaurants)
-        print("Boca Restaurant to go to is {0}".format(python_choice))
+        print("Boca Restaurant to go to is '{0}'".format(python_choice))
         decider(Boca_restaurants)
 
     elif (City_in == 'Winston' or City_in == 'winston'):
         python_choice = random.choice(Winston_restaurants)
-        print("Winston Restaurant to go to is {0}".format(python_choice))
+        print("Winston Restaurant to go to is '{0}'".format(python_choice))
         decider(Winston_restaurants)
     else:
         print('This script does not consider that city. Retype "Winston" or "Boca".')
     
 def decider(City_in):
     pleased = False
-    decide_another = input("Another random choice?")
+    decide_another = input("Another random choice? Enter either 'y' or 'n': ")
     print("", end="\n")
     if decide_another == 'y':
         new_choice = random.choice(City_in)
         while not pleased:
-            print("Boca Restaurant to go to is {0}".format(new_choice))
-            decide_another = input("Another random choice?")
+            print("Boca Restaurant to go to is '{0}'".format(new_choice))
+            decide_another = input("Another random choice? Enter either 'y' or 'n': ")
             print("", end="\n")        
             if decide_another == 'n':
                 pleased = True
