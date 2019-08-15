@@ -13,7 +13,7 @@ def sendText():
     myTwilioNumber = os.environ['MY_TWILIO_NUMBER']
     myCellPhone = os.environ['MY_CELL_PHONE_NUMBER']
 
-    message = client.messages.create(body="testing env",from_=myTwilioNumber,to=myCellPhone)  
+    message = client.messages.create(body="testing env", from_=myTwilioNumber, to=myCellPhone)  
     print(message.sid)
 
 if __name__ == '__main__':
