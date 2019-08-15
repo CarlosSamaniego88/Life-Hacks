@@ -39,7 +39,7 @@ def decider(City_in):
     if decide_another == 'y':
         new_choice = random.choice(City_in)
         while not pleased:
-            print("Boca Restaurant to go to is '{0}'".format(new_choice))
+            print("Another restaurant to go to is '{0}'".format(new_choice))
             decide_another = input("Another random choice? Enter either 'y' or 'n': ")
             print("", end="\n")        
             if decide_another == 'n':
