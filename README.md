@@ -41,7 +41,9 @@ pip install schedule
 folder with photos should have same file formats (all JPG, jpeg, png, etc)
 
 
-When running this script, run, "nohup python insta.py &", this allows the script to run in the background
+When running this script, run, ``nohup python insta.py &``, this allows the script to run in the background
+
+To kill the process, go to the folder with the python script is running, type, ``ps ax | grep insta.py`` and kill the process by doing ``kill PID#``. When running the script, it will return a PID number in the console.
 
 -----------------------------------------------------
 
