@@ -9,7 +9,7 @@ Winston_restaurants = ['Cugino Forno', 'Nawab', 'Chipotle', 'BJs', 'Five Guys', 
                             'Penny Path Cafe', 'Hakka Chow', 'Thai Harmony', 'Hickory Tavern', 'Village Tavern',
                             'Fratellis', 'Ryans', 'Publix','Midtown Cafe', 'Golden India', 'Quanto Basto',
                             'Cowboys Brazilian Buffet', 'Waffle House', 'Basil Leaf', 'Tacoriendo III', 'Mellow Mushroom',
-                            'El Rancho Tacqueria', 'Dominos']
+                            'El Rancho Tacqueria', 'Dominos', 'Yamas']
 
 def main():
     rest_picker()
