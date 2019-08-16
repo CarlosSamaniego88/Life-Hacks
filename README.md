@@ -17,6 +17,8 @@ and to activate (in each respective folder, Insta_scheduler, myDominosOrder, etc
 source env/bin/activate
 ``
 
+If you want to install all dependencies in the repository, pip
+
 _____________________________________________________
 
 To install all necessary packages, can also do:
