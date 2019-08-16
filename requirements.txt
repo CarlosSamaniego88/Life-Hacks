@@ -4,6 +4,7 @@ decorator==4.0.11
 filetype==1.0.5
 idna==2.8
 imageio==2.1.2
+IMAPClient==2.1.0
 instagram-private-api==1.6.0.0
 instagram-private-api-extensions==0.3.8
 instapy-cli==0.0.12
