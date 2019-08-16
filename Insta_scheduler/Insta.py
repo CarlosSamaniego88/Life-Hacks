@@ -14,14 +14,12 @@ def post():
     #in .bash_profile, write, "export username="yourusername", and, "export password="yourpassword""
     username = os.environ['INSTA_USERNAME']          
     password = os.environ['INSTA_PASSWORD']           
-    mypath = "directory/*.JPG"     #insert path to folder with photos you want to post
+    mypath = "/Users/Carlos/Projects/Life-Hacks/Insta_scheduler/future_posts/*.JPG"     #insert path to folder with photos you want to post
                                    #make sure all images in fill have same ending like JPG, jpeg, png, etc
 
     image_paths = glob.glob(mypath)     #will iterate and store all image paths in folder
-    # print(image_paths)
-    insta_post_descriptions = ["TBT to",
-                                "TBT to "
-                            ]       #associate a description with your photo, check order with print statement in 15 
+    print(image_paths)
+    insta_post_descriptions = ["TBT to spring break with the day one fam"]       #associate a description with your photo, check order with print statement in 15 
     
     future_posts = zip(image_paths, insta_post_descriptions)    #creates a dictionary with photo and description
     # print(future_posts)
@@ -32,7 +30,7 @@ def post():
             break                               #break allows the posting of one photo at a time instead of all in folder
         print("success")
 
-schedule.every().thursday.at("15:00").do(post)  #insert when you want to schedule in military time
+schedule.every().thursday.at("20:03").do(post)  #insert when you want to schedule in military time
 
 while True:
     schedule.run_pending()

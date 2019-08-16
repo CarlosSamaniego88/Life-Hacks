@@ -1,1 +1,21 @@
 /usr/local/Cellar/python@2/2.7.16/Frameworks/Python.framework/Versions/2.7/Resources/Python.app/Contents/MacOS/Python: can't open file '/path/to/test.py': [Errno 2] No such file or directory
+Traceback (most recent call last):
+  File "insta.py", line 1, in <module>
+    from instapy_cli import client
+ImportError: No module named instapy_cli
+Traceback (most recent call last):
+  File "insta.py", line 36, in <module>
+    schedule.run_pending()
+  File "/Users/Carlos/Projects/Life-Hacks/env/lib/python3.7/site-packages/schedule/__init__.py", line 563, in run_pending
+    default_scheduler.run_pending()
+  File "/Users/Carlos/Projects/Life-Hacks/env/lib/python3.7/site-packages/schedule/__init__.py", line 94, in run_pending
+    self._run_job(job)
+  File "/Users/Carlos/Projects/Life-Hacks/env/lib/python3.7/site-packages/schedule/__init__.py", line 147, in _run_job
+    ret = job.run()
+  File "/Users/Carlos/Projects/Life-Hacks/env/lib/python3.7/site-packages/schedule/__init__.py", line 466, in run
+    ret = self.job_func()
+  File "insta.py", line 15, in post
+    username = os.environ['INSTA_USERNAME']          
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/os.py", line 678, in __getitem__
+    raise KeyError(key) from None
+KeyError: 'INSTA_USERNAME'
