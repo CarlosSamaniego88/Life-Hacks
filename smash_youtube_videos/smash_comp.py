@@ -24,5 +24,3 @@ def smash_comp():
 
 if __name__ == '__main__':
     main() 
-
-echo "export API_KEY='AIzaSyAekUl_Jlf-JRbs-3VhvACMF_j9-z8oz8Q'" > smash.env
