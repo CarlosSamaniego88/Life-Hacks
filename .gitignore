@@ -127,7 +127,7 @@ dmypy.json
 .vscode/
 .vscode
 
+smash.env
 twilio.env
 dominos.env
 instagram.env
-smash.env
