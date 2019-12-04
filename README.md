@@ -75,6 +75,11 @@ pip install twilio
 pip install imapclient
 ``
 
+To activate env to retrieve info from os.environ, must do the following:
+``
+source ./twilio.env
+``
+
 May be difficult to implement in a school email or an email with a advanced security settings. It is best to use your personal email. One must have 2-factor authentication within that email. Gmail specifically will not allow you to access at first the email via python script. You first must go to your gmail security settings, enable 2-factor authentication, then add a Gmail Application-Specific Password by adding an application to sign into google with.
 
 First you must input what topic you would like the python script to search for. Then the script accesses your gmail, looks through unseen messages with that "topic to search for" in the subject and body of an email. If an email is unseen and the topic is in the subject/body of the email, you will get a text notification.  
